@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { plan, shopNfoodNparty } from '../../../api';
-import CategoryItem from './CategoryItem'
 import Button from '../../_common/Button';
 import NoSearch from '../../_common/NoSearch';
-import SearchItem from './SearchItem';
-import Btn1Popup from '../../popups/Btn1Popup';
 import DataLoading from '../../_common/DataLoading';
+import Btn1Popup from '../../popups/Btn1Popup';
+import CategoryItem from './CategoryItem'
+import SearchItem from './SearchItem';
 
 function Category({selectedTab}) {
     const { searchData } = plan();

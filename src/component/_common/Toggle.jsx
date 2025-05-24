@@ -1,4 +1,3 @@
-import React from 'react'
 import Down_black from '../icons/Down_black'
 import Up_black from '../icons/Up_black'
 

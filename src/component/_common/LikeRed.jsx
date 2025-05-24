@@ -1,4 +1,3 @@
-import React from 'react'
 import Heart_fill_red from '../icons/Heart_fill_red'
 import Heart_stroke_red from '../icons/Heart_stroke_red'
 

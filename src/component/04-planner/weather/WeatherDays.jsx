@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
-import WeatherItem from './WeatherItem'
 import axios from 'axios';
 import WeatherTemp from '../../_common/WeatherTemp';
 import DataLoading from '../../_common/DataLoading';
+import WeatherItem from './WeatherItem'
 
 import "swiper/css";
 

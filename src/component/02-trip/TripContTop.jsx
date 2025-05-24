@@ -1,6 +1,5 @@
-import React from 'react'
-import MoreBtn from '../../component/_common/MoreBtn'
 import { NavLink } from 'react-router-dom'
+import MoreBtn from '../../component/_common/MoreBtn'
 
 function TripContTop({triplink, tripcontTitle, tripcontText}) {
   return (

@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { motion } from "framer-motion";
+
 import '../styles/splash.scss'
 
 function Splash() {
@@ -32,12 +33,6 @@ function Splash() {
         >
             <img src="/imgs/logo_white.svg" alt="떠나봅서logo" />
         </motion.div>
-        // <div className='spl-background'>
-        //     <p><img src="/imgs/logo_white.svg" alt="떠나봅서logo_wt" /></p>
-        // </div>
-        // <div className='spl-wt'>
-        //     <img src="/imgs/splash_white2.svg" alt="로딩_wt" />
-        // </div>
     )
 }
 

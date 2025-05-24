@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Controller, useFormContext, useWatch } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import TextField from "@mui/material/TextField";
 import { Box, Typography } from "@mui/material";
+import TextField from "@mui/material/TextField";
+import axios from "axios";
 import Right_black from "../../icons/Right_black";
 import Close from "../../icons/Close";
-import CmSubject from "../cmSubject";
 import Btn2Popup from "../../popups/Btn2Popup";
-import axios from "axios";
-import CmUploadImg from "../img/CmUploadImg";
 import PopupAction from "../../_common/PopupAction";
 import DataLoading from "../../_common/DataLoading"; 
+import CmUploadImg from "../img/CmUploadImg";
+import CmSubject from "../cmSubject";
 
 function CmNewPost({ onClose = () => {} }) {
   const { control, setFocus, handleSubmit, reset } = useFormContext();

@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Left_black({className, onClick}) {
   return (

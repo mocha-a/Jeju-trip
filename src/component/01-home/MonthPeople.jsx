@@ -1,5 +1,5 @@
-import { animate, useMotionValue, useTransform, motion } from "framer-motion";
 import { useEffect } from "react";
+import { animate, useMotionValue, useTransform, motion } from "framer-motion";
 
 function MonthPeople({ count }) {
   const motionVal = useMotionValue(0);

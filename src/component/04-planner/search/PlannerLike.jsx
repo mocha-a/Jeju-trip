@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { plan, shopNfoodNparty } from '../../../api';
 import { useLocation, useNavigate } from 'react-router-dom';
 import NoLikePlace from '../../_common/NoLikePlace';
 import Button from '../../_common/Button';
+import DataLoading from '../../_common/DataLoading';
 import Btn1Popup from '../../popups/Btn1Popup';
 import SearchItem from './SearchItem';
-import DataLoading from '../../_common/DataLoading';
 
 function PlannerLike({selectedTab}) {
     const { LikeData } = plan();

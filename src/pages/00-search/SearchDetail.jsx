@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { shopNfoodNparty } from '../../api';
-import Search from '../../component/icons/Search';
+import DataLoading from '../../component/_common/DataLoading';
 import SearchBar from '../../component/00-search/SearchBar';
 import PlaceItem from '../../component/_common/PlaceItem';
 import NoSearch from '../../component/_common/NoSearch';
 import TagBtn from '../../component/_common/TagBtn';
-import DataLoading from '../../component/_common/DataLoading';
+import Search from '../../component/icons/Search';
 import Top from '../../component/icons/Top';
+
 import "../../styles/00-search/searchDetail.scss";
 
 function SearchDetail() {

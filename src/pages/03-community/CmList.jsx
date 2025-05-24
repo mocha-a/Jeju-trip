@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import CmFeedList from '../../component/03-community/CmFeedList';
-import CmSlideImg from '../../component/03-community/img/CmSlideImg';
-import "../../styles/03-community/cmList.scss";
 import TabPage from '../../component/_common/TabPage';
+import CmSlideImg from '../../component/03-community/img/CmSlideImg';
+import CmFeedList from '../../component/03-community/CmFeedList';
+
+import "../../styles/03-community/cmList.scss";
 import "../../styles/03-community/_res-community.scss";
 
 function CmList() {

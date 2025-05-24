@@ -1,14 +1,11 @@
-import React, { useEffect } from 'react'
-import { shopNfoodNparty, tour } from '../../api';
-import TripSildeItem from './TripSildeItem';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import TripSildeItem from './TripSildeItem';
 
 // Import Swiper styles
 import "swiper/css";
 import 'swiper/css/free-mode';
 
 function TripSilde({slidedata=[], detailurl}) {
-
   return (
     <Swiper className='trip-main-swiper'
     slidesPerView={2.5}

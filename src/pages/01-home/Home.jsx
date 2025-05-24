@@ -1,23 +1,22 @@
+import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-
-import axios from 'axios';
-import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import { shopNfoodNparty } from '../../api';
-import MainItem from '../../component/01-home/MainItem'
+import axios from 'axios';
 import WeatherTemp from '../../component/_common/WeatherTemp';
-import HomeTab from '../../component/01-home/HomeTab'
-import HomeContTop from '../../component/01-home/HomeContTop'
-import HomeTrip from '../../component/01-home/HomeTrip'
-import HomeFood from '../../component/01-home/HomeFood'
-import HomePhoto from '../../component/01-home/HomePhoto'
 import PopupAction from '../../component/_common/PopupAction';
-import Month from '../../component/01-home/Month';
-import MonthPeople from '../../component/01-home/MonthPeople';
 import DataLoading from '../../component/_common/DataLoading';
-import Btn2Popup from '../../component/popups/Btn2Popup';
 import Top from '../../component/icons/Top';
+import Btn2Popup from '../../component/popups/Btn2Popup';
+import HomeContTop from '../../component/01-home/HomeContTop'
+import MonthPeople from '../../component/01-home/MonthPeople';
+import HomePhoto from '../../component/01-home/HomePhoto'
+import HomeFood from '../../component/01-home/HomeFood'
+import MainItem from '../../component/01-home/MainItem'
+import HomeTrip from '../../component/01-home/HomeTrip'
+import HomeTab from '../../component/01-home/HomeTab'
+import Month from '../../component/01-home/Month';
 
 // Import Swiper styles
 import "swiper/css";

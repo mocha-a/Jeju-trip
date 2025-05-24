@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import Cicle from "../../icons/Cicle";
 import ChCicle from "../../icons/ChCicle";
 import CmDeleteBtn from "../CmDeleteBtn";

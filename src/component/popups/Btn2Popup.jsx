@@ -1,4 +1,3 @@
-import React from 'react'
 import Warning from '../icons/Warning';
 import Call from '../icons/Call';
 

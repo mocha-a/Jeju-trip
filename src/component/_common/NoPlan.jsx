@@ -1,4 +1,3 @@
-import React from 'react'
 import Smile from '../icons/Smile';
 
 const NoPlan = () => {

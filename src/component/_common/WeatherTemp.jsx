@@ -1,4 +1,3 @@
-import React from 'react'
 
 function WeatherTemp({tmn, tmx, className}) {
   return (

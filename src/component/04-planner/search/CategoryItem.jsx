@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import TagBtn from '../../_common/TagBtn'
 
-function CategoryItem({data, category, title, onClick }) {
+function CategoryItem({data, title, onClick }) {
     const [check, setCheck] = useState(null);
 
     return (

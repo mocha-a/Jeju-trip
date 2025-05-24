@@ -1,4 +1,3 @@
-import React from 'react'
 import { mode } from '../../../api';
 
 function PlannerDay({setCalendar, tripDay}) {

@@ -1,4 +1,3 @@
-import React from 'react'
 import TicketItem from './ticket/TicketItem';
 
 function PickPlanItem({planData, tagBtn}) {

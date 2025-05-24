@@ -1,8 +1,8 @@
-import React from 'react'
+import { NavLink } from 'react-router-dom'
 import Home_blue from '../icons/Home_blue'
 import Home_gray from '../icons/Home_gray'
+
 import '../../styles/01-home/home.scss'
-import { NavLink } from 'react-router-dom'
 
 function HomeItem() {
   return (

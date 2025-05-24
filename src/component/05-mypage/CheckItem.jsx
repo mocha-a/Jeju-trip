@@ -1,9 +1,9 @@
-import React from 'react'
 import { Checkbox, FormControlLabel, FormGroup } from '@mui/material'
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import AddCheckItem from './AddCheckItem';
 import SwipeAction from '../_common/SwipeAction';
+import AddCheckItem from './AddCheckItem';
+
 import "../../styles/05-mypage/check/checkDetail.scss";
 
 function CheckItem({ list, setList, isEdit, type, trashClick, trash, setIsPopupOpen }) {

@@ -1,4 +1,3 @@
-import React from 'react'
 import TabMenu from './TabMenu';
 
 function TabPage({ type, onTabChange, selectedTab }) {

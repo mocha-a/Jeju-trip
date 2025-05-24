@@ -1,4 +1,3 @@
-import React from 'react'
 
 function TabItem({ imgUrl, title, dateTime }) {
   const imgSrc = imgUrl ? imgUrl :'/imgs/common_noimage_02.png';

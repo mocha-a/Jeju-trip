@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Button from '../_common/Button'
 import Close from '../icons/Close';
 

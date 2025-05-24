@@ -1,39 +1,47 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { mode } from './api';
+
 import Header from './component/_common/Header';
 import Menu from './component/_common/Menu';
+
+import Splash from './pages/Splash';
 import Home from './pages/01-home/Home';
+
 import Trip from './pages/02-trip/Trip';
 import TripList from './pages/02-trip/TripList';
 import TripDetail from './pages/02-trip/TripDetail';
+
 import CmList from './pages/03-community/CmList';
+import CmPhoto from './pages/03-community/CmPhoto';
 import CmDetail from './pages/03-community/CmDetail';
 import CmPostPage from './pages/03-community/CmPostPage';
 import CmEditPage from './pages/03-community/CmEditPage';
 import CmSubjectPage from './pages/03-community/CmSubjectPage';
-import CmPhoto from './pages/03-community/CmPhoto';
-import PlannerList from './pages/04-planner/PlannerList';
-import PlannerDetail from './pages/04-planner/PlannerDetail';
+
 import Place from './pages/04-planner/Place';
 import PickPlan from './pages/04-planner/PickPlan';
+import PlannerList from './pages/04-planner/PlannerList';
+import PlannerDetail from './pages/04-planner/PlannerDetail';
+
 import My from './pages/05-mypage/My';
-import CheckList from './pages/05-mypage/check/CheckList';
-import CheckDetail from './pages/05-mypage/check/CheckDetail';
+import QnA from './pages/05-mypage/QnA';
 import Like from './pages/05-mypage/Like';
 import Activity from './pages/05-mypage/Activity';
-import QnA from './pages/05-mypage/QnA';
+import CheckList from './pages/05-mypage/check/CheckList';
+import CheckDetail from './pages/05-mypage/check/CheckDetail';
+
 import Login from './pages/00-login/Login';
 import SearchPage from './pages/00-search/SearchPage';
 import SearchDetail from './pages/00-search/SearchDetail';
 import KakaoRedirect from './pages/00-login/KakaoRedirect';
 import NaverRedirect from './pages/00-login/NaverRedirect';
 import GoogleRedirect from './pages/00-login/GoogleRedirect';
-import Splash from './pages/Splash';
 
 import './styles/_style.scss';
 
 
 function App() {
+
   // 렌더링 전에 splash로 보낼지 판단
   const { isEditMode } = mode();
   const pathname = window.location.pathname;

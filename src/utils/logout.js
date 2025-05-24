@@ -9,7 +9,7 @@ export function kakaoLogout() {
     sessionStorage.clear();
 
     if (kakaoAccessToken) {
-        const client_id = 'f86a88750c261ba4c1ffd8113fa7f753';
+        const client_id = process.env.REACT_APP_KAKAO_CLIENT_ID;
         const kakaoLogoutUrl = `https://kauth.kakao.com/oauth/logout?client_id=${client_id}&logout_redirect_uri=${logoutRedirectUri}`;
         window.location.href = kakaoLogoutUrl;
     } else {

@@ -1,8 +1,8 @@
-import React from 'react'
+import { NavLink } from 'react-router-dom'
 import Commu_blue from '../icons/Commu_blue'
 import Commu_gray from '../icons/Commu_gray'
+
 import '../../styles/01-home/home.scss'
-import { NavLink } from 'react-router-dom'
 
 function CommentItem() {
   return (

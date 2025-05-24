@@ -1,4 +1,3 @@
-import React from 'react'
 
 function My_like({className}) {
   return (

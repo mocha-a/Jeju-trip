@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Home_gray({className}) {
   return (

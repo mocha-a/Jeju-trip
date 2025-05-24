@@ -52,12 +52,13 @@
   font-family: 'NanumSquare';
   color: #333333;
   line-height: 1.4;
+  white-space: pre-line;
 }
 .post-image { 
   width: 100%; 
   max-width: 100%;
   position: relative;
-  height: 30vh;
+  height: 70vh;
   object-fit: cover;
   border-radius: 10px;
   margin: 16px 0;

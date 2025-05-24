@@ -1,8 +1,7 @@
-import React from 'react'
+import { useNavigate } from 'react-router-dom';
+import Activity from '../icons/Activity';
 import My_like from '../icons/My_like';
 import Check from '../icons/Check';
-import Activity from '../icons/Activity';
-import { useNavigate } from 'react-router-dom';
 
 function MyMenu({ isLoggedIn, openPopup }) {
 

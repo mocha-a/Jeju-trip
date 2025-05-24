@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { NavLink } from 'react-router-dom';
-import CardItem from './CardItem'
 import Plane from '../../icons/Plane'
 import Btn2Popup from '../../popups/Btn2Popup';
+import CardItem from './CardItem'
 import SvgMiddleLine from './SvgMiddleLine';
 import SvgVerticalLine from './SvgVerticalLine';
 
 function TicketPick({idx, topBarBtn, ticketdate, data}) {
-    
     const [isPopupOpen, setIsPopupOpen] = useState(false);
 
     return (

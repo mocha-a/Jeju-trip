@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom';
 import { shopNfoodNparty } from '../../api';
+import DataLoading from '../../component/_common/DataLoading';
 import TripContTop from '../../component/02-trip/TripContTop';
 import TripSilde from '../../component/02-trip/TripSilde';
-import "../../styles/02-trip/trip.scss";
-import DataLoading from '../../component/_common/DataLoading';
 
+import "../../styles/02-trip/trip.scss";
 
 function Trip() {
   

@@ -1,6 +1,5 @@
-import React from 'react'
-import TicketItem from '../ticket/TicketItem';
 import { mode } from '../../../api';
+import TicketItem from '../ticket/TicketItem';
 
 function PlannerTicket({tripDay, ticketDate}) {
     const { isEditMode } = mode();

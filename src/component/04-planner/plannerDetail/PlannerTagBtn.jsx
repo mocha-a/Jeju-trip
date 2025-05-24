@@ -1,11 +1,9 @@
-import React from 'react';
-import { mode } from '../../../api';
 import { NavLink } from 'react-router-dom';
+import { mode } from '../../../api';
 import TagBtn from '../../_common/TagBtn';
 
 function PlannerTagBtn({id, checkData, checkListId, setIsPopupOpenDelete, setIsPopupOpenCheckList, setIsPopupOpenPickPlan }) {
     const { isEditMode } = mode();
-    
 
     return (
     <div className='planner_tagbtn'>

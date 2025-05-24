@@ -1,10 +1,7 @@
-import React from 'react'
-import AroundItem from './AroundItem'
+import { NavLink, useLocation } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from 'swiper/modules';
-import { NavLink, useLocation } from 'react-router-dom';
-
-
+import AroundItem from './AroundItem'
 
 function Around({arounddata}) {
   const location = useLocation();

@@ -1,10 +1,11 @@
-import React, { useState, useEffect, use } from 'react'
+import { useState, useEffect } from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { shopNfoodNparty } from '../../api';
-import TripPlaceItem from '../../component/02-trip/tripList/TripPlaceItem';
-import TripFilter from '../../component/02-trip/tripList/TripFilter'
 import DataLoading from '../../component/_common/DataLoading';
 import Top from '../../component/icons/Top';
+import TripPlaceItem from '../../component/02-trip/tripList/TripPlaceItem';
+import TripFilter from '../../component/02-trip/tripList/TripFilter'
+
 import "../../styles/02-trip/tripList.scss";
 
 function TripList() {
@@ -16,7 +17,6 @@ function TripList() {
   const type = pathParts[3]; // 항상 이 위치가 type임
   const { id } = useParams();
 
-  const postId = id;
   const [likeData, setLikeData] = useState([]); // 여러 아이템 좋아요 정보
   const [likedPosts, setLikedPosts] = useState([]);
   const user = JSON.parse(sessionStorage.getItem('user'));

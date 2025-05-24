@@ -1,7 +1,6 @@
-import React, { useRef, useState } from "react";
+import { useRef } from "react";
 import { Box } from "@mui/material";
 import Photo from "../../icons/Photo";
-import axios from "axios";
 
 function CmUploadImg({ selectedImages = [], setSelectedImages,imageUrls, setImageUrls}) {
   const fileInputRef = useRef(null);

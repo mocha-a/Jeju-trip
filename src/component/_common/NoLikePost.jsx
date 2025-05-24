@@ -1,7 +1,6 @@
-import React from 'react'
 import Heart_broken from '../icons/Heart_broken';
-const NoLikePost = () => {
-  
+
+const NoLikePost = () => {  
   return (
     <div className="NoLikePost">
     <Heart_broken className={"heartBrokenIcon"}/>

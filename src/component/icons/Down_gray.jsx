@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Down_gray({ className }) {
   return (

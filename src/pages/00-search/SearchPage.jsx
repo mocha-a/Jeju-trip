@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import Search from '../../component/icons/Search'
+import DataLoading from '../../component/_common/DataLoading'
 import SearchBar from '../../component/00-search/SearchBar'
 import Ranking from '../../component/00-search/Ranking'
 import TagBtn from '../../component/_common/TagBtn'
-import DataLoading from '../../component/_common/DataLoading'
-import "../../styles/00-search/searchPage.scss";
+import Search from '../../component/icons/Search'
 
+import "../../styles/00-search/searchPage.scss";
 
 function SearchPage() {
   const [loading, setLoading] = useState(true); // 데이터 로딩

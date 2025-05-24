@@ -1,10 +1,6 @@
-import React from 'react'
 import LikeWhite from '../../_common/LikeWhite';
 
 function TripDetailItem({img, title, address, introduction, phone, liked, onClick}) {
-
-
-
   return (
     <div className="trip-detail-item">
       <div className='trip-detail-top'>
@@ -12,7 +8,6 @@ function TripDetailItem({img, title, address, introduction, phone, liked, onClic
           <img src={img} alt="상세이미지" />
         </div>
         <LikeWhite className={'likewhite'} liked={liked} onClick={onClick}/>
-        {/* <LikeWhite liked={true}/> */}
       </div>
       <div className='trip-detail-text'>
         <h3>{title}</h3>

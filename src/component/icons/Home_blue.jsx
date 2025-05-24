@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Home_blue({className}) {
   return (

@@ -1,16 +1,17 @@
 import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom'
 import { DateRange } from 'react-date-range';
-import { ko } from 'date-fns/locale';
 import { eachDayOfInterval, format, parse } from 'date-fns';
+import { ko } from 'date-fns/locale';
 import { mode, plan } from '../../../api';
 import Button from '../../_common/Button';
+
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 import '../../../styles/04-planner/calendar.scss'
 
 function Calendar({btnName, type, onClick}) {
-  const allDays = JSON.parse(localStorage.getItem('allDays'));
+  let allDays = JSON.parse(localStorage.getItem('allDays'));
   const { planData, editModeDate} = plan();
   const { enterEditMode, isEditMode } = mode();
   const { id } = useParams(); // url에서 id 가져오기
@@ -47,7 +48,7 @@ function Calendar({btnName, type, onClick}) {
         title,
         date: date,
         item: {
-          days: date.map((day) => ({
+          days: [...new Set(Array.isArray(date) ? date : [date])].map((day) => ({
             day: format(parse(day, 'yyyy.MM.dd', new Date()), 'M.d/eee', { locale: ko }),
             plans: [],
           }))
@@ -63,7 +64,7 @@ function Calendar({btnName, type, onClick}) {
       title : planData?.title,
       date: date,
       item: {
-        days: date.map((day) => ({
+        days: [...new Set(Array.isArray(date) ? date : [date])].map((day) => ({
           day: format(parse(day, 'yyyy.MM.dd', new Date()), 'M.d/eee', { locale: ko }),
           plans: [],
         }))
@@ -88,17 +89,21 @@ function Calendar({btnName, type, onClick}) {
     // 상태 업데이트
     setRange([item.selection]);
 
-    // 중간 날짜들만 추출
-    const allDates = eachDayOfInterval({ start, end });
-    const apiMiddleDates = allDates
-      .slice(1, -1) // 첫날, 마지막날 제외
-      .map((date) => format(date, 'yyyy.MM.dd'));
+    // 시작일과 종료일이 같다면 하루만 저장
+    if (format(start, 'yyyy.MM.dd') === format(end, 'yyyy.MM.dd')) {
+      allDays = [format(start, 'yyyy.MM.dd')];
+    } else {
+      // 중간 날짜들만 추출
+      const allDates = eachDayOfInterval({ start, end });
+      const apiMiddleDates = allDates
+        .slice(1, -1) // 첫날, 마지막날 제외
+        .map((date) => format(date, 'yyyy.MM.dd'));
 
-      
       const startDay = format(start, 'yyyy.MM.dd');
       const endDay = format(end, 'yyyy.MM.dd');
-      
-      let allDays = [startDay, ...apiMiddleDates, endDay]
+
+      allDays = [startDay, ...apiMiddleDates, endDay];
+    }
 
     // localStorage에 저장
     localStorage.setItem('allDays', JSON.stringify(allDays));
@@ -117,7 +122,6 @@ function Calendar({btnName, type, onClick}) {
           scroll={{ enabled: true }}
           locale={ko}
           monthDisplayFormat="yyyy.MM"
-          minDate={new Date()} // 오늘 이후만 가능
         />
       </div>
         <button 

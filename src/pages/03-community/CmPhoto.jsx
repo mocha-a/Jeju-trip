@@ -1,4 +1,3 @@
-import React from 'react'
 import "../../styles/03-community/cmPhoto.scss";
 import "../../styles/03-community/_res-community.scss";
 

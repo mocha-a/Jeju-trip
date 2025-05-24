@@ -1,18 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from "react-router-dom";
-import Detail from '../../component/03-community/CmDetail';
-import CmComment from '../../component/03-community/comment/CmComment';
-import Dot from '../../component/icons/Dot';
-import Heart_fill_red from '../../component/icons/Heart_fill_red';
-import Heart_stroke_red from '../../component/icons/Heart_stroke_red';
-import Comment from '../../component/icons/Comment';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
-import Btn2Popup from '../../component/popups/Btn2Popup';
+import Heart_stroke_red from '../../component/icons/Heart_stroke_red';
+import Heart_fill_red from '../../component/icons/Heart_fill_red';
+import Comment from '../../component/icons/Comment';
+import Dot from '../../component/icons/Dot';
 import Btn1Popup from '../../component/popups/Btn1Popup'; 
-import "../../styles/03-community/cmDetail.scss";
+import Btn2Popup from '../../component/popups/Btn2Popup';
+import CmComment from '../../component/03-community/comment/CmComment';
+import Detail from '../../component/03-community/CmDetail';
+
 import 'swiper/css';
 import 'swiper/css/pagination';
+import "../../styles/03-community/cmDetail.scss";
 
 const init = [];
 

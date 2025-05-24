@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Commu_blue({className}) {
   return (

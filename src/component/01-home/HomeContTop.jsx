@@ -1,14 +1,15 @@
-import React from 'react'
-import MoreBtn from '../_common/MoreBtn'
 import { NavLink } from 'react-router-dom'
+import MoreBtn from '../_common/MoreBtn'
 
 function HomeContTop({onClick, homecontTitle, homecontEmoji, to, state, showMore = true}) {
+  
   const handleMoreBtn = (e)=>{
     if(onClick){
       e.preventDefault();
       onClick();
     }
   };
+
   return (
     <div className='home-menu-top'>
       <h2>{homecontTitle} <span className='emoji'>{homecontEmoji}</span> </h2>

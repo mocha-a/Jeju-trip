@@ -1,7 +1,6 @@
-import React from 'react'
+import Close from '../../icons/Close';
 import PopupAction from '../../_common/PopupAction';
 import Calendar from './Calendar';
-import Close from '../../icons/Close';
 
 function CalendarPopup({calendar, setCalendar}) {
   return (

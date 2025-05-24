@@ -1,4 +1,3 @@
-import React from 'react'
 import Warning from '../icons/Warning';
 
 function Btn1Popup({ isOpen, setIsOpen, type, onConfirm, className='' }) {

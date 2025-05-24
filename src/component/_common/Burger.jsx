@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
+import { googleLogout, kakaoLogout, naverLogout } from '../../utils/logout';
+
 import Right_blue from '../icons/Right_blue';
 import Close from '../icons/Close';
 import Btn1Popup from '../popups/Btn1Popup';
 import Btn2Popup from '../popups/Btn2Popup';
-import { googleLogout, kakaoLogout, naverLogout } from '../../utils/logout';
 
 function Burger({onClose, isOpen}) {
   const [user, setUser] = useState(null);

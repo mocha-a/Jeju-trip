@@ -1,8 +1,8 @@
-import React from 'react'
+import { NavLink } from 'react-router-dom'
 import Mypage_blue from '../icons/Mypage_blue'
 import Mypage_gray from '../icons/Mypage_gray'
+
 import '../../styles/01-home/home.scss'
-import { NavLink } from 'react-router-dom'
 
 function MypageItem() {
   return (

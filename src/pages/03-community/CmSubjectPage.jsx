@@ -1,8 +1,8 @@
-import React from "react";
 import { useForm, FormProvider } from "react-hook-form";
-import CmNewPost from "../../component/03-community/post/CmNewPost";
 import { Box } from "@mui/material"; 
+import CmNewPost from "../../component/03-community/post/CmNewPost";
 import CmSubject from "../../component/03-community/cmSubject";
+
 import "../../styles/03-community/cmSubjectPage.scss";
 import "../../styles/03-community/_res-community.scss";
 

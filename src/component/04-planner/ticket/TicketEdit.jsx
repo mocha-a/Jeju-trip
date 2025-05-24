@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import { mode, plan } from '../../../api';
-import Plane from '../../icons/Plane';
 import SwipeActionMemo from '../SwipeActionMemo';
-import CardItem from './CardItem';
-import Button from '../../_common/Button';
+import Plane from '../../icons/Plane';
 import List from '../../icons/List';
+import Button from '../../_common/Button';
 import SvgMiddleLine from './SvgMiddleLine';
 import SvgVerticalLine from './SvgVerticalLine';
+import CardItem from './CardItem';
 
 function TicketEdit({idx, btnName, ticketdate}) {
     const { planData, setPlanData } = plan();

@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Map_gray({className}) {
   return (

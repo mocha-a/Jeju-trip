@@ -1,21 +1,22 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useForm, FormProvider } from "react-hook-form";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 import dayjs from "dayjs";
 import customParseFormat from "dayjs/plugin/customParseFormat";
 import Newpost from "../icons/Newpost";
 import Heart_fill_red from "../icons/Heart_fill_red";
 import Heart_stroke_red from "../icons/Heart_stroke_red";
 import Comment from "../icons/Comment";
+import Top from "../icons/Top";
 import TagBtn from "../_common/TagBtn";
 import NoWritePost from "../_common/NoWritePost";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
 import DataLoading from "../_common/DataLoading";
 import Btn2Popup from "../popups/Btn2Popup";
-import Top from "../icons/Top";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 dayjs.extend(customParseFormat);
 

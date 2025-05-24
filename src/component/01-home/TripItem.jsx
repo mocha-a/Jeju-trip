@@ -1,8 +1,8 @@
-import React from 'react'
+import { NavLink } from 'react-router-dom'
 import Trip_blue from '../icons/Trip_blue'
 import Trip_gray from '../icons/Trip_gray'
+
 import '../../styles/01-home/home.scss'
-import { NavLink } from 'react-router-dom'
 
 function TripItem() {
   return (

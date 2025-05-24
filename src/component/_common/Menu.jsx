@@ -1,13 +1,12 @@
+import { useLocation } from 'react-router-dom';
+import MapItem from '../01-home/MapItem';
 import HomeItem from '../01-home/HomeItem'
 import TripItem from '../01-home/TripItem';
-import CommentItem from '../01-home/CommentItem';
-import MapItem from '../01-home/MapItem';
 import MypageItem from '../01-home/MypageItem';
-import { useLocation } from 'react-router-dom';
+import CommentItem from '../01-home/CommentItem';
 
 function Menu() {
   const location = useLocation();
-  // console.log(location);
   const hiddenPaths = ["/login", "/community/cmpostpage", "/community/cmeditpage", "/community/cmsubjectpage", "/splash"];
   // location이 pathname을 가지고 있어서 안보이게 할 페이지를 지정
   const hideMenu = hiddenPaths.includes(location.pathname);

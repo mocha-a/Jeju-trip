@@ -1,4 +1,3 @@
-import React from 'react'
 
 function TripTag({tag}) {
   if (!tag || tag.length === 0) return null;

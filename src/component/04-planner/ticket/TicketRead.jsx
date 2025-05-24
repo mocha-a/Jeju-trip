@@ -1,10 +1,9 @@
-import React from 'react'
-import Plane from '../../icons/Plane'
-import CardItem from './CardItem'
-import { plan } from '../../../api';
-import SvgMiddleLine from './SvgMiddleLine';
 import { NavLink } from 'react-router-dom';
+import { plan } from '../../../api';
+import Plane from '../../icons/Plane'
+import SvgMiddleLine from './SvgMiddleLine';
 import SvgVerticalLine from './SvgVerticalLine';
+import CardItem from './CardItem'
 
 function TicketRead({idx, topBarBtn, ticketdate}) {
     const { planData } = plan();

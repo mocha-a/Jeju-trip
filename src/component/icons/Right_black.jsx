@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Right_black({className}) {
   return (

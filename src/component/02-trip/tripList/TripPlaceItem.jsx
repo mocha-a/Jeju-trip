@@ -1,4 +1,3 @@
-import React from 'react'
 import PlaceItem from '../../_common/PlaceItem'
 
 function TripPlaceItem({title, roadaddress, tag, imgpath, heartType, likeCount}) {

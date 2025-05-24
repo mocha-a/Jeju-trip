@@ -1,4 +1,3 @@
-import React from 'react'
 
 function KakaoLogin() {
   const kakao_url = 'https://kauth.kakao.com/oauth/authorize';

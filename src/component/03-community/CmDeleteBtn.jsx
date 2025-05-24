@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Btn2Popup from "../popups/Btn2Popup"; 
+import { useState } from "react";
 import { createPortal } from "react-dom";
 import Btn1Popup from "../popups/Btn1Popup";
+import Btn2Popup from "../popups/Btn2Popup"; 
 
 function CmDeleteBtn({ selectedCommentIds, handleDeleteComment }) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);

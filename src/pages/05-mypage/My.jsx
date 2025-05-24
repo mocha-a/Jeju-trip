@@ -104,7 +104,7 @@ function My() {
           {/* 로그인 상태 */}
 
           <div className='my-login'>
-            <p>{`${user.name} 님, 어시여 !`}</p>
+            <p><span>{user.name}</span> 님, 어시여 !</p>
             <span>{user.email ? user.email : user.id}</span>
           </div>
 

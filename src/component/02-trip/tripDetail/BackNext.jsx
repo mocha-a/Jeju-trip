@@ -1,10 +1,8 @@
-import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Left_black from '../../icons/Left_black'
 import Right_black from '../../icons/Right_black'
-import { NavLink, useNavigate } from 'react-router-dom'
 
 function BackNext({prevPath, nextPath, filterList}) {
-
   const navigate  = useNavigate();
 
   return (

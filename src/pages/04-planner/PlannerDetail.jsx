@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import { format, parse } from 'date-fns'
 import { ko } from 'date-fns/locale'
 import { mode, plan } from '../../api'
 import axios from 'axios'
-import WeatherDays from '../../component/04-planner/weather/WeatherDays'
-import Btn2Popup from '../../component/popups/Btn2Popup'
-import Btn1Popup from '../../component/popups/Btn1Popup'
+
 import CalendarPopup from '../../component/04-planner/calendar/CalendarPopup'
-import PlannerTitle from '../../component/04-planner/plannerDetail/PlannerTitle'
-import PlannerDay from '../../component/04-planner/plannerDetail/PlannerDay'
 import PlannerTagBtn from '../../component/04-planner/plannerDetail/PlannerTagBtn'
 import PlannerTicket from '../../component/04-planner/plannerDetail/PlannerTicket'
+import PlannerTitle from '../../component/04-planner/plannerDetail/PlannerTitle'
+import WeatherDays from '../../component/04-planner/weather/WeatherDays'
+import PlannerDay from '../../component/04-planner/plannerDetail/PlannerDay'
+import Btn2Popup from '../../component/popups/Btn2Popup'
+import Btn1Popup from '../../component/popups/Btn1Popup'
 import Button from '../../component/_common/Button'
 import Close from '../../component/icons/Close'
 import Top from '../../component/icons/Top'
@@ -45,6 +46,7 @@ function PlannerDetail() {
     const ticketDate = tripDay?.map(day =>
         format(parse(day, 'yyyy.MM.dd', new Date()), 'M.d/eee', { locale: ko })
     );
+    console.log(location.state);
     
     useEffect(()=>{
         window.scrollTo(0, 0);

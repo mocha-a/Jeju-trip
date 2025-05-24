@@ -1,4 +1,3 @@
-import React from 'react'
 import Right_black from '../icons/Right_black'
 
 function MoreBtn({onClick}) {

@@ -1,5 +1,5 @@
-import React from 'react'
 import Smile from '../icons/Smile';
+
 const NoSearch = ({className}) => {
     return (
     <div className={`NoSearch ${className}`}>

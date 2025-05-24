@@ -1,17 +1,16 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { NavLink, useLocation, useNavigate } from 'react-router-dom'
+
+import Burger from './Burger';
 import List from '../icons/List'
 import Search from '../icons/Search'
 import Arrow from '../icons/Arrow';
-import { NavLink, useLocation, useNavigate } from 'react-router-dom'
-import Burger from './Burger';
-
 
 function Header() {
   const [burgerActive, setBurgerActive] = useState(false); //버거 상태 기본값false
 
   const navigate = useNavigate();
   const location = useLocation();
-  // console.log(location);
   const pathname = location.pathname;
   const slash = pathname.split('/').length - 1; // '/'의 개수 세기
 
@@ -39,7 +38,6 @@ function Header() {
           <Search className={'header-search'}/>
         </NavLink>
         <List className={'header-list'} onClick={()=>setBurgerActive(true)}/>
-        
         <Burger isOpen={burgerActive} onClose={()=>setBurgerActive(false)}/>
       </div>
     </header>

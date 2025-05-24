@@ -1,8 +1,8 @@
 import { FormProvider, useForm } from "react-hook-form";
 import { useLocation, useNavigate } from "react-router-dom";
-import dayjs from "dayjs";
-import "../../styles/03-community/cmPostPage.scss";
 import CmEditPost from "../../component/03-community/post/CmEditPost";
+
+import "../../styles/03-community/cmPostPage.scss";
 import "../../styles/03-community/_res-community.scss";
 
 function CmEditPage() {

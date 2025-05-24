@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { mode, plan } from '../../api';
 import { addDays, format, parse } from 'date-fns';
 import { useNavigate } from 'react-router-dom';
@@ -9,11 +9,11 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-import PickPlanItem from '../../component/04-planner/PickPlanItem';
 import TagBtn from '../../component/_common/TagBtn';
 import Button from '../../component/_common/Button';
 import Top from '../../component/icons/Top';
 import Btn2Popup from '../../component/popups/Btn2Popup';
+import PickPlanItem from '../../component/04-planner/PickPlanItem';
 
 import "../../styles/04-planner/pickplan.scss";
 
@@ -154,9 +154,6 @@ function PickPlan() {
                 </button>
                 ))}
             </div>
-
-
-
 
             {dataMap[select] && (
             <>

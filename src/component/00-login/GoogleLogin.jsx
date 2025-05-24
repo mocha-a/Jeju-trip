@@ -1,4 +1,3 @@
-import React from 'react'
 
 function GoogleLogin() {
   const google_url = 'https://accounts.google.com/o/oauth2/v2/auth';

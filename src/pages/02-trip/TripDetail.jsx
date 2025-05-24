@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useLocation, useParams, useNavigate } from 'react-router-dom';
 import { shopNfoodNparty } from '../../api';
-import Around from '../../component/02-trip/tripDetail/Around'
-import BackNext from '../../component/02-trip/tripDetail/BackNext';
-import TripDetailItem from '../../component/02-trip/tripDetail/TripDetailItem';
-import TripTag from '../../component/02-trip/tripDetail/TripTag';
 import DataLoading from '../../component/_common/DataLoading';
 import Btn2Popup from '../../component/popups/Btn2Popup';
+import TripDetailItem from '../../component/02-trip/tripDetail/TripDetailItem';
+import BackNext from '../../component/02-trip/tripDetail/BackNext';
+import TripTag from '../../component/02-trip/tripDetail/TripTag';
+import Around from '../../component/02-trip/tripDetail/Around'
+
 import "../../styles/02-trip/tripDetail.scss";
 
 function TripDetail() {

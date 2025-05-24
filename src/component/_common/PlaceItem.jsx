@@ -1,7 +1,4 @@
-import React from 'react'
 import LikeRed from './LikeRed';
-
-
 
 function PlaceItem({title, roadaddress, tag, imgpath, heartType, ClassName}) {
 

@@ -1,10 +1,7 @@
-import React from 'react'
 import Smile from '../icons/Smile';
 
 const NoWritePost = () => {
-  
   return (
-
     <div className="NoWritePost">
         <Smile className={"smileIcon "}/>
         <b>작성한 게시물이 없습니다.</b>

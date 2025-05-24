@@ -1,4 +1,3 @@
-import React from 'react'
 import { mode } from '../../../api';
 import SwipeHand from '../../_common/SwipeHand';
 

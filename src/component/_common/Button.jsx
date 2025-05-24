@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Button({className, btn, children}) {
     return (

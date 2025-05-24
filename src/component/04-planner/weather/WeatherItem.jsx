@@ -1,4 +1,3 @@
-import React from 'react'
 import WeatherTemp from '../../_common/WeatherTemp';
 
 function WeatherItem({tmn, tmx, icon, date}) {

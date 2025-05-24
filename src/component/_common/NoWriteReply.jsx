@@ -1,9 +1,7 @@
-import React from 'react'
 import Smile from '../icons/Smile';
-const NoWriteReply = () => {
-  
-  return (
 
+const NoWriteReply = () => {
+  return (
     <div className="NoWriteReply">
         <Smile className={'smileIcon'}/>
         <b>작성한 댓글이 없습니다.</b>

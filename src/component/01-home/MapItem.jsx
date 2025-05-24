@@ -1,8 +1,8 @@
-import React from 'react'
+import { NavLink } from 'react-router-dom'
 import Map_blue from '../icons/Map_blue'
 import Map_gray from '../icons/Map_gray'
+
 import '../../styles/01-home/home.scss'
-import { NavLink } from 'react-router-dom'
 
 function MapItem() {
   return (

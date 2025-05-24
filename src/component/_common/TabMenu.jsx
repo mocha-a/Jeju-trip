@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function TabMenu({ tabTitle, onTabChange, selectedTab }) {
     const [addClass, setAddClass] = useState(0);

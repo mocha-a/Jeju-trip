@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Mypage_gray({className}) {
   return (

@@ -1,6 +1,5 @@
-import React from 'react'
-import Right_black from '../icons/Right_black'
 import { useNavigate } from 'react-router-dom';
+import Right_black from '../icons/Right_black'
 
 function ListItem({ id, title, date, page }) {
   const navigate = useNavigate();

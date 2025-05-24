@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Heart_fill_white({className}) {
   return (

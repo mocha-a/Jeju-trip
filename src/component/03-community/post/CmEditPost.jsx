@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Controller, useFormContext, useWatch } from "react-hook-form";
 import { useNavigate } from "react-router-dom";  
-import TextField from "@mui/material/TextField";
 import { Box, Typography } from "@mui/material";
+import TextField from "@mui/material/TextField";
 import Right_black from "../../icons/Right_black";
 import Warning from "../../icons/Warning";
+import Photo from "../../icons/Photo";
 import Close from "../../icons/Close"; 
 import CmSubject from "../cmSubject";
 import Btn2Popup from "../../popups/Btn2Popup";
 import PopupAction from "../../_common/PopupAction";
-import Photo from "../../icons/Photo";
 
 function CmEditPost({ postData, onClose = () => {}, onSubmit }) {
   const { control, setFocus, handleSubmit, reset } = useFormContext();

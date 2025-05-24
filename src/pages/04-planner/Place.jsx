@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { mode } from '../../api';
-import TabPage from '../../component/_common/TabPage';
-import Category from '../../component/04-planner/search/Category';
+
 import PlannerLike from '../../component/04-planner/search/PlannerLike';
+import Category from '../../component/04-planner/search/Category';
+import TabPage from '../../component/_common/TabPage';
 import Arrow from '../../component/icons/Arrow';
-import "../../styles/04-planner/place.scss";
 import Top from '../../component/icons/Top';
+
+import "../../styles/04-planner/place.scss";
 
 function Place() {
     // selectedTab 이용해서 탭 별 내용 넣으세요,,,! Activity.jsx 참고

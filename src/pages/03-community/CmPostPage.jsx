@@ -2,6 +2,7 @@ import { FormProvider, useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import dayjs from "dayjs";
 import CmNewPost from "../../component/03-community/post/CmNewPost";
+
 import "../../styles/03-community/cmPostPage.scss";
 import "../../styles/03-community/_res-community.scss";
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import Close from '../icons/Close';
 
 function CmSubject({ onClose, setSelectedItem, selectedItem }) {

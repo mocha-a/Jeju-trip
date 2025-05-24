@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import ListItem from './ListItem'
-import Btn1Popup from '../popups/Btn1Popup';
-import Btn2Popup from '../popups/Btn2Popup';
 import SwipeAction from './SwipeAction'
 import SwipeHand from './SwipeHand';
 import DataLoading from './DataLoading';
+import Btn1Popup from '../popups/Btn1Popup';
+import Btn2Popup from '../popups/Btn2Popup';
 
 function ListPage({listData, page, trashClick, trash, onConfirm, isDonePopupOpen, setIsDonePopupOpen, loading = false}) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);

@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react'
-import axios from 'axios';
+import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import DataLoading from '../../component/_common/DataLoading';
+
 import '../../styles/00-login/login.scss'
 
 function KakaoRedirect() {;

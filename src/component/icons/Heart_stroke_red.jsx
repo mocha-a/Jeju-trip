@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Heart_stroke_red({className}) {
   return (

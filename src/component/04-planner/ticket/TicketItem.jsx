@@ -1,4 +1,3 @@
-import React from 'react'
 import { mode } from '../../../api';
 import TicketEdit from './TicketEdit';
 import TicketRead from './TicketRead';
