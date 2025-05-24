@@ -33,11 +33,20 @@ function CmSlideImg() {
   }, [page]);
 
   const handleScroll = (e) => {
-    const bottom = e.target.scrollHeight === e.target.scrollTop + e.target.clientHeight;
-    if (bottom && !loading) {
+    const { scrollTop, scrollHeight, clientHeight } = e.target;
+    // 아래에서 100px 이내로 다가왔으면 로딩
+    const isBottom = scrollHeight - scrollTop - clientHeight < 100;
+
+    if (isBottom && !loading && images.length > 0) {
       setPage((prevPage) => prevPage + 1);
     }
   };
+  // const handleScroll = (e) => {
+  //   const bottom = e.target.scrollHeight === e.target.scrollTop + e.target.clientHeight;
+  //   if (bottom && !loading) {
+  //     setPage((prevPage) => prevPage + 1);
+  //   }
+  // };
 
   const handleClick = async (id,item) => {
     const user = JSON.parse(sessionStorage.getItem("user"));
